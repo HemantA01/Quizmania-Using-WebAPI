@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Quizmania1.API\\Quizmania1.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

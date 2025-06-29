@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quizmania1.API", "Quizmania1.API\Quizmania1.API.csproj", "{0F3EF282-764F-4BB2-8D37-89B20B57F078}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quizmania1.Data", "Quizmania1.Data\Quizmania1.Data.csproj", "{21092E33-B9C8-4680-AADA-F766B741AB20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quizmania1.Model", "Quizmania1.Model\Quizmania1.Model.csproj", "{4583FC8E-95E4-40B5-8ACF-B0057311FB18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quizmania1.Service", "QuizMania1.Service\Quizmania1.Service.csproj", "{AAB8C5C9-B7B0-443D-863F-C038FC9652AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizMania1.Common", "QuizMania1.Common\QuizMania1.Common.csproj", "{DAB936E7-E2DC-440E-A45A-1E8C03A504AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizMania1.UI", "QuizMania1.UI\QuizMania1.UI.csproj", "{D433DF1D-2C40-4D56-992C-12C9CA682D1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F3EF282-764F-4BB2-8D37-89B20B57F078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3EF282-764F-4BB2-8D37-89B20B57F078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3EF282-764F-4BB2-8D37-89B20B57F078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3EF282-764F-4BB2-8D37-89B20B57F078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21092E33-B9C8-4680-AADA-F766B741AB20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21092E33-B9C8-4680-AADA-F766B741AB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21092E33-B9C8-4680-AADA-F766B741AB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21092E33-B9C8-4680-AADA-F766B741AB20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4583FC8E-95E4-40B5-8ACF-B0057311FB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4583FC8E-95E4-40B5-8ACF-B0057311FB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4583FC8E-95E4-40B5-8ACF-B0057311FB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4583FC8E-95E4-40B5-8ACF-B0057311FB18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB8C5C9-B7B0-443D-863F-C038FC9652AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB8C5C9-B7B0-443D-863F-C038FC9652AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB8C5C9-B7B0-443D-863F-C038FC9652AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB8C5C9-B7B0-443D-863F-C038FC9652AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB936E7-E2DC-440E-A45A-1E8C03A504AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB936E7-E2DC-440E-A45A-1E8C03A504AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB936E7-E2DC-440E-A45A-1E8C03A504AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB936E7-E2DC-440E-A45A-1E8C03A504AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D433DF1D-2C40-4D56-992C-12C9CA682D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D433DF1D-2C40-4D56-992C-12C9CA682D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D433DF1D-2C40-4D56-992C-12C9CA682D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D433DF1D-2C40-4D56-992C-12C9CA682D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE913D57-876D-4BD3-88AB-25791F64BFBA}
+	EndGlobalSection
+EndGlobal
