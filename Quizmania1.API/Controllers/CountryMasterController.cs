@@ -13,7 +13,7 @@ namespace Quizmania1.API.Controllers
     [ApiController]
     [Route("api/v{version:ApiVersion}/[controller]")]
     [ApiVersion(1)]
-    [ApiVersion(2)]
+    [ApiVersion(2)]    
     public class CountryMasterController : ControllerBase
     {
         private readonly ICountryMaster _countryMaster;
