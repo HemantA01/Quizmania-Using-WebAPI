@@ -1,0 +1,23 @@
+﻿@page
+@*@model QuizMania1.UI.Controllers.DashboardcshtmlModel*@
+
+@{
+    //ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout_Dashboard.cshtml";
+    //var data = HttpContextAccessor.HttpContext.Session.GetString("UserName");
+}
+<div class="container">
+    <div class="row">
+    <p>Used Id stored in session is: </p> @*@ViewData["UserID"]*@
+    <p>Used Name stored in session is: </p> @*@ViewData["UserName"]*@  @*@data*@
+    </div>
+    <div class="row">
+        <nav class="nav-dropdown">
+            <ul class="nav-fill">Master
+                <li><a href="/Master/GetAllCountries">Country Master</a></li>
+                <li><a href="/Home/Privacy">State Master</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+

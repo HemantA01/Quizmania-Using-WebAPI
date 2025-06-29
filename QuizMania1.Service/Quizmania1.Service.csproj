@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="SendGrid" Version="9.28.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuizMania1.Common\QuizMania1.Common.csproj" />
+    <ProjectReference Include="..\Quizmania1.Data\Quizmania1.Data.csproj" />
+    <ProjectReference Include="..\Quizmania1.Model\Quizmania1.Model.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,97 @@
+﻿@model Quizmania1.Model.ViewModel.CountryStateVM
+@{
+    ViewData["Title"] = "GetStatesList";
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/datatables.css" />
+<link rel="stylesheet" href="~/css/all.css" />
+
+<div class="container">
+    <div class="row shadow">
+        <h2>State Master Module</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Select country name<span style="color:red;">*</span> : </label>
+                <select id="ddlCountry" class="form-control">
+                    <option value="0">--Select Country--</option>
+                    @foreach(var item in Model.countryMasterList)
+                    {
+                        <option value="@item.Id">@item.CountryName</option>
+                    }
+                </select>
+                <span style="color: red;" id="spnCountry"></span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label>Enter State name<span style="color:red;">*</span> : </label>
+                <input type="text" id="txtState" autocomplete="off" class="form-control" />
+                <span style="color: red;" id="spnState"></span>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Select Status</label><br />
+                <input type="radio" name="rdo" value="1" checked="checked" />Active &emsp;
+                <input type="radio" name="rdo" value="0" />In-Active
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" id="btnAddStates" value="Add States" class="btn btn-primary" />
+                <input type="hidden" id="hdnStateId" value="" />
+            </div>
+        </div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <table class="table dataTable" id="tblState">
+            <thead>
+                <tr>
+                    <th>S No</th>
+                    <th>Country Name</th>
+                    <th>State Name</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int count = 1;
+                    foreach (var states in Model.countryStateMasterList)
+                    {
+                                <tr>
+                                    <td>@count</td>
+                                    <td class="text-uppercase">@states.CountryName</td>
+                                    <td class="text-uppercase">@states.StateName</td>
+                                    <td>@states.IsActive</td>
+                                    <td>
+                                @if (states.IsActive == true)
+                                {
+                                                <a style="cursor:pointer;" class="aEdit"><i class="fa fa-edit"></i></a>
+                                                <a style="cursor:pointer;" class="aDelete"><i class="fa fa-ban"></i></a>
+                                                <a style="cursor:pointer;" class="aRemove"><i class="fa fa-remove"></i></a>
+                                }
+                                else
+                                {
+                                                <a style="cursor:pointer;" class="aEdit"><i class="fa fa-edit"></i></a>
+                                                <a style="cursor:pointer;" class="aDelete"><i class="fa fa-check"></i></a>
+                                                <a style="cursor:pointer;" class="aRemove"><i class="fa fa-remove"></i></a>
+                                }
+
+                                    </td>
+                                </tr>
+                        count = count + 1;
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="~/js/jquery-3.6.0.min.js"></script>
+<script src="~/js/datatables.min.js"></script>
+<script src="~/js/all.js"></script>
+<script src="~/js/CustomJs/StateMaster.js"></script>

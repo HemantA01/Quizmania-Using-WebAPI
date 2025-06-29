@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Quizmania1.Model": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:56320;http://localhost:56321"
+    }
+  }
+}

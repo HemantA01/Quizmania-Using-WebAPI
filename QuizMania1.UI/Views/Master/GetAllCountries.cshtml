@@ -1,0 +1,92 @@
+﻿@model List<Quizmania1.Model.ViewModel.CountryMasterVM>
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/datatables.css" />
+@*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
+<link rel="stylesheet" href="~/css/all.css" />
+
+<div class="container">
+    <div class="row shadow">
+        <h2>Country Master Module</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <label>Please enter country name<span style="color:red;">*</span> : </label>
+            <input type="hidden" id="hdnCountry" value="" />
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="text" id="txtCountry" autocomplete="off" class="form-control" />
+                <span style="color: red;" id="spnCountry"></span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="text" id="txtCountryAbb" autocomplete="off" class="form-control" />
+                <span style="color: red;" id="spnCountryAbb"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="button" id="btnAddCountry" value="Add Country" class="btn btn-primary" />
+        </div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <table class="table dataTable" id="tblCountry">
+            <thead>
+                <tr>
+                    <th>S No</th>
+                    <th>Country Name</th>
+                    <th>Abbreviation</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int count = 1;
+                    foreach (var countries in Model)
+                    {
+                        <tr>
+                            <td>@count
+                            <input type="hidden" id="hdnCountryId" value="@countries.Id" />
+                            </td>
+                            <td class="text-uppercase">@countries.CountryName</td>
+                            <td class="text-uppercase">@countries.CountryAbb</td>
+                            <td>@countries.IsActive</td>
+                            <td>
+                                @if (countries.IsActive == true)
+                                {
+                                    <a style="cursor:pointer;" class="aEdit"><i class="fa fa-edit"></i></a>
+                                    <a style="cursor:pointer;" class="aDelete"><i class="fa fa-ban"></i></a>
+                                    <a style="cursor:pointer;" class="aRemove"><i class="fa fa-remove"></i></a>
+                                }
+                                else
+                                {
+                                    <a style="cursor:pointer;" class="aEdit"><i class="fa fa-edit"></i></a>
+                                    <a style="cursor:pointer;" class="aDelete"><i class="fa fa-check"></i></a>
+                                    <a style="cursor:pointer;" class="aRemove"><i class="fa fa-remove"></i></a>
+                                }
+
+                            </td>
+                        </tr>
+                        count = count + 1;
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="~/js/jquery-3.6.0.min.js"></script>
+<script src="~/js/datatables.min.js"></script>
+<script src="~/js/all.js"></script>
+<script src="~/js/CustomJs/CountryMaster.js"></script>
+<script>
+    $(document).ready(function () {
+        //alert('2');
+       // $('#tblCountry').dataTable();
+    });
+
+</script>

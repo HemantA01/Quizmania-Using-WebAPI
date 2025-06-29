@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quizmania</title>
+    <link href="~/css/font-awsome.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/custom.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <p><img src="~/images/az-grc-logo-site-300x70.png" /></p>
+                @*<p>
+                    <img src="~/images/happy-valentines-day-neon-vector.jpg" width="100%;" />
+                </p>*@
+            </div>
+            <div class="col-md-4">
+                <p class="float-right-login" style="">
+                    <h2>QuizMania</h2>
+                </p>
+                <p>
+                    Login to Quizmania World
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <img src="~/images/happy-valentines-day-neon-vector.jpg" width="100%" />
+            </div>
+            @*<div class="col-md-1">
+            </div>*@
+            <div class="col-md-3" style="padding-top: 15rem;">
+                <p id="credResult"></p>
+                <div class="form-group">
+                    <label>Enter Username<span style="color: red;">*</span> </label>
+                    <input type="text" id="txtUserName" class="form-control" />
+                    <span id="spnUsername" style="color: red;">Username required</span>
+                </div>
+                <div class="form-group">
+                    <label>Enter Password<span style="color: red;">*</span> </label>
+                    <input type="text" id="txtPassword" class="form-control" />
+                    <span id="spnPassword" style="color: red;">Password required</span>
+                </div>
+                <div class="form-group">
+                    &nbsp;
+                </div>
+                <div class="form-group">
+                    <input type="button" id="btnLogin" class="btn btn-success text-uppercase" value="Login" />
+                    <a href="/Home/Index" style="float: right; padding-top: 1rem;">Forget Password? Click Here</a>
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/CustomJs/UserLogin.js"></script>
